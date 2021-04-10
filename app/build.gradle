@@ -30,6 +30,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    sourceSets {
+        test {
+            assets.srcDirs = ['src/test/assets']
+        }
+    }
 }
 
 dependencies {
@@ -42,4 +48,8 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    testImplementation 'io.cucumber:cucumber-java8:6.10.2'
+    testImplementation 'io.cucumber:cucumber-junit:6.10.2'
+    testImplementation "io.cucumber:cucumber-android:4.8.4"
 }

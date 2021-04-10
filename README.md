@@ -18,7 +18,7 @@ We will create our tests in the `test` directory in our sources. to make the sep
 
 next we shall create an `assets` folder in `src/test`, and inside we shall create a folder named `features` to hold our scenarios.
 
-![Tree](feature tree.png)
+![Tree](./feature-tree.png)
 
 ## Adding the configs and source sets
 
